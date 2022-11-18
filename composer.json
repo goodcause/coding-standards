@@ -1,0 +1,20 @@
+{
+    "name": "goodcause/coding-standards",
+    "description": "Coding standards for Good Cause projects.",
+    "type": "phpcodesniffer-standard",
+    "version": "dev-develop",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Good Cause Digital Ltd",
+            "email": "hello@goodcause.digital"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "squizlabs/php_codesniffer" : "3.7.1",
+        "wp-coding-standards/wpcs": "*",
+        "phpcompatibility/phpcompatibility-wp": "^2"
+    }
+}

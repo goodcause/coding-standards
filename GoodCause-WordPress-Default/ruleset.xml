@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="GoodCause-WordPress-Default">
+	<description>A default ruleset used on all Good Cause WordPress projects.</description>
+
+	<!-- Load the WordPress-Extra ruleset (includes the WordPress-Core ruleset). -->
+	<rule ref="WordPress-Extra"/>
+
+	<!-- Load the WordPress-Docs ruleset. -->
+	<rule ref="WordPress-Docs"/>
+
+	<!-- Loads the PHP Compatibility ruleset. -->
+	<rule ref="PHPCompatibilityWP" />
+
+	<!-- Set the PHP version for the PHPCompatibilityWP standard to test against. -->
+	<config name="testVersion" value="7.4-"/>
+	
+</ruleset>
