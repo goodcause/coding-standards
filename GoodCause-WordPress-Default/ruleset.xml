@@ -18,7 +18,7 @@
 	<rule ref="WordPress-Docs"/>
 
 	<!-- Loads the PHP Compatibility ruleset. -->
-	<rule ref="PHPCompatibilityWP" />
+	<!-- <rule ref="PHPCompatibilityWP" /> -->
 
 	<!-- Set the PHP version for the PHPCompatibilityWP standard to test against. -->
 	<config name="testVersion" value="7.4-"/>
