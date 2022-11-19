@@ -22,4 +22,6 @@
 
 	<!-- Set the PHP version for the PHPCompatibilityWP standard to test against. -->
 	<config name="testVersion" value="7.4-"/>
+	
+	<exclude name="Squiz.Commenting.FileComment.Missing" />
 </ruleset>
