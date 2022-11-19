@@ -25,6 +25,6 @@
 	
 	<rule ref="Squiz.Commenting">
 		<!-- Stop requiring PHP files to have a doc comment. -->
-		<exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
+		<exclude name="Squiz.Commenting.FileComment.Missing"/>
 	</rule>
 </ruleset>
