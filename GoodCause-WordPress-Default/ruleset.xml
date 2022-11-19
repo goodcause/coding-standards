@@ -12,10 +12,10 @@
 	<exclude-pattern>node_modules/*</exclude-pattern>
 
 	<!-- Load the WordPress-Extra ruleset (includes the WordPress-Core ruleset). -->
-	<rule ref="WordPress-Core"/>
+	<rule ref="WordPress-Extra"/>
 
 	<!-- Load the WordPress-Docs ruleset. -->
-	<!-- <rule ref="WordPress-Docs"/> -->
+	<rule ref="WordPress-Docs"/>
 
 	<!-- Loads the PHP Compatibility ruleset. -->
 	<rule ref="PHPCompatibilityWP" />
