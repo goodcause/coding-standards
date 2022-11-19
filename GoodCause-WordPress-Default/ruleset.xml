@@ -18,10 +18,13 @@
 	<rule ref="WordPress-Docs"/>
 
 	<!-- Loads the PHP Compatibility ruleset. -->
-	<!-- <rule ref="PHPCompatibilityWP" /> -->
+	<rule ref="PHPCompatibilityWP" />
 
 	<!-- Set the PHP version for the PHPCompatibilityWP standard to test against. -->
 	<config name="testVersion" value="7.4-"/>
 	
-	<exclude name="Squiz.Commenting.FileComment.Missing" />
+	<rule ref="Squiz.Commenting">
+		<!-- Stop requiring PHP files to have a doc comment. -->
+		<exclude name="Squiz.Commenting.BlockComment.SingleLine"/>
+	</rule>
 </ruleset>
