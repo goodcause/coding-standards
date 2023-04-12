@@ -1,0 +1,12 @@
+# Ignore OS files
+.DS_Store
+.Spotlight-V100
+Thumbs.db
+
+# Ignore Composer files
+vendor/
+composer.lock
+
+# Ignore NPM files
+node_modules/
+package-lock.json

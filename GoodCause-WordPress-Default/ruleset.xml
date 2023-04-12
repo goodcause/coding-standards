@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<ruleset name="GoodCause-WordPress-Default">
+	<description>A default ruleset used on all Good Cause WordPress projects.</description>
+
+	<!-- WordPress-Coding-Standards Sniff Documentaion -->
+	<!-- https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
+
+	<!-- PHP files. -->
+	<arg name="extensions" value="php" />
+
+	<!-- Exclude vendor and node_modules directories. -->
+	<exclude-pattern>vendor/*</exclude-pattern>
+	<exclude-pattern>node_modules/*</exclude-pattern>
+
+		<!-- PHPCompatibilityWP ruleset. -->
+	<rule ref="PHPCompatibilityWP" />
+
+	<!-- WordPress-Core ruleset. -->
+	<rule ref="WordPress-Core">
+
+		<!-- Allow short arrays.  -->
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+
+		<!-- More Yoda conditions, there will be no. -->
+		<exclude name="WordPress.PHP.YodaConditions" />
+
+		<!-- Allow forward slashes in hook names. -->
+		<rule ref="WordPress.NamingConventions.ValidHookName">
+			<properties>
+				<property name="additionalWordDelimiters" value="/" />
+			</properties>
+		</rule>
+
+		<!-- Ban inline assignment in control structures. -->
+		<rule ref="PSR2R.ControlStructures.NoInlineAssignment" />
+
+	</rule>
+
+	<!-- WordPress-Docs ruleset. -->
+	<rule ref="WordPress-Docs">
+
+		<!-- Not every file needs a file comment. -->
+		<exclude name="Squiz.Commenting.FileComment.Missing" />
+
+	</rule>
+</ruleset>

@@ -1,0 +1,23 @@
+{
+  "name": "@goodcause/coding-standards",
+  "license": "GPL-2.0+",
+  "contributors": [
+		{
+			"name": "joehcooper",
+			"email": "joe@goodcause.digital"
+		}
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.3"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
