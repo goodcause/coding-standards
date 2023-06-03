@@ -32,6 +32,10 @@
 		</rule>
 		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
 
+		<!-- Allow filenames to be PSR-4 compliant. -->
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
+
 		<!-- Ban inline assignment in control structures. -->
 		<rule ref="PSR2R.ControlStructures.NoInlineAssignment" />
 
