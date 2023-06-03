@@ -30,6 +30,7 @@
 				<property name="additionalWordDelimiters" value="/" />
 			</properties>
 		</rule>
+		<exclude name="WordPress.NamingConventions.ValidHookName.UseUnderscores" />
 
 		<!-- Ban inline assignment in control structures. -->
 		<rule ref="PSR2R.ControlStructures.NoInlineAssignment" />
