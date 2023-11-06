@@ -12,7 +12,7 @@
 	<exclude-pattern>vendor/*</exclude-pattern>
 	<exclude-pattern>node_modules/*</exclude-pattern>
 
-		<!-- PHPCompatibilityWP ruleset. -->
+	<!-- PHPCompatibilityWP ruleset. -->
 	<rule ref="PHPCompatibilityWP" />
 
 	<!-- WordPress-Core ruleset. -->
@@ -38,6 +38,9 @@
 
 		<!-- Ban inline assignment in control structures. -->
 		<rule ref="PSR2R.ControlStructures.NoInlineAssignment" />
+
+		<!-- Allow Short Ternaries -->
+		<exclude name="Universal.Operators.DisallowShortTernary.Found" />
 
 	</rule>
 
